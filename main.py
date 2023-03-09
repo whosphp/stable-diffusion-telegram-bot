@@ -97,7 +97,7 @@ def draw(client, message):
         message.reply_photo(
             photo=f"{word}.png",
             caption=
-            f"Prompt - **{msg}**\n **[{message.from_user.first_name}-Kun](tg://user?id={message.from_user.id})**\n Join @WaifuAiSupport"
+            f"Prompt - **{msg}**\n **[{message.from_user.first_name}](tg://user?id={message.from_user.id})**"[:1024]
         )
         os.remove(f"{word}.png")
         K.delete()
